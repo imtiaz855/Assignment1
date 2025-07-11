@@ -1,496 +1,309 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+
+
+.my-font{
+  font-family: "TikTok Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100;
 }
 
-.header {
-    background-image: url('Assets/Hero-bg.png');
+body{
+    background-color: #f5f8ff;
+    margin:  auto;
+    font-family: sans-serif;
+    font-weight: 400;
 }
-.navbar{
-    display : flex;
+button{
+    border: none;
+}
+button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(238, 123, 8);
+    transition: 0.5s;
+    box-shadow: 5px 5px 1px rgb(217, 213, 213);
+}
+/* primary class*/
+
+.primary-btn{
+    background-color: #4E47FF;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+.logo{
+    color: #4e47ff;
+    font-size: 50px;
+}
+/* nav section*/
+nav{
+    display: flex;
     justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-    padding: 50px 0;
 }
-.navbar .logo{
-    font-size: 34px;
-    font-weight: 700;
-    color: rgb(red, green, blue);
-    text-decoration: none;
+.btn1{
+    padding: 10px 20px;
+    height: 40px;
+    margin: 20px 40px;
+}
+.logo1{
+    text-align: center;
+    margin: 10px 40px;
+}
+.banner-main{
+    height: 400px;
+    padding: 30px 40px;
+    background-image: url(/B12A01-landing-launchpad/Assets/Hero-bg.png);
+    text-align: center;
     
 }
-.navbar button{
-    border-radius: 10px;
-
-background: rgb(78, 71, 255);
-color: rgb(255, 255, 255);
-font-family: Raleway;
-font-size: 16px;
-font-weight: 700;
-line-height: 150%;
-letter-spacing: 0%;
-text-align: center;}
-
-.hero-content {
+.baner{
     text-align: center;
-    padding-top: 80px;
-}
-
-.hero-content h1 {
-    font-size: 50px;
-    max-width: 600px;
-    margin: auto;
-}
-
-.hero-content .btn {
-    margin-top: 25px;
-}
-
-/* Button Styles */
-.btn {
-    padding: 12px 28px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 700;
-}
-.btn-signup {
-    background-color: #5845F8;
-    color: white;
-}
-.btn-main {
-    background-color: #5845F8;
-    color: white;
-}
-/* Two Column Layout */
-.two-column {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 50px;
-}
-
-.action-section {
-    padding: 100px 0;
-}
-
-.action-section h2 {
-    font-size: 42px;
-    font-weight: 800;
-}
-
-.action-section p {
-    font-size: 18px;
-    color: #555;
-    margin: 20px 0;
-}
-
-.action-section img {
-    width: 100%;
-    border-radius: 15px;
-}
-/* Stats Section */
-.stats-section {
-    background-color: #F0EEFF;
-    padding: 60px 0;
-    text-align: center;
-}
-
-.stats-section h2 {
-    font-size: 32px;
-    font-weight: 800;
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 40px;
-}
-
-.stat-item h3 {
-    font-size: 50px;
-    color: #5845F8;
-    margin-bottom: 5px;
-}
-
-.stat-item p {
-    color: #333;
-}
-/* Testimonials Section */
-.testimonials-section {
-    padding: 100px 0;
-}
-.section-title {
-    text-align: center;
-    font-size: 32px;
-    font-weight: 800;
-    margin-bottom: 50px;
-}
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-.card {
-    border: 1px solid #EAEAEA;
-    border-radius: 10px;
-    padding: 25px;
-}
-.rating {
-    color: #FFC700;
-}
-.card h4 {
-    margin: 10px 0;
-}
-.reviewer {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-.reviewer img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-/* General Setup */
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #F8F9FD; /* ছবির পেছনের হালকা রঙ */
-    margin: 0;
-    padding: 50px 0; /* উপরে ও নিচে কিছুটা জায়গা রাখার জন্য */
-}
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 800;
-    color: #050419;
-    margin-bottom: 50px;
-}
-
-/* Testimonials Section */
-.testimonials-section {
-    padding: 50px 0;
-}
-
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.testimonial-card {
-    background: white;
-    padding: 30px;
-    border: 1px solid #EAEAEA;
-    border-radius: 12px;
-}
-
-.rating {
-    color: #FFC700; 
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.testimonial-card h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #050419;
-    margin: 0 0 10px 0;
-}
-
-.testimonial-card p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-    margin: 0 0 25px 0;
-}
-
-.reviewer {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.reviewer-avatar-placeholder {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #EAEAEA; 
-}
-
-.reviewer-info h4 {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-/* CTA Section */
-.cta-section {
-    padding: 50px 0;
-    text-align: center;
-}
-
-.cta-section p {
-    color: #555;
-    margin-top: -40px;
-    margin-bottom: 30px;
-}
-
-.btn-cta {
-    display: inline-block;
-    background-color: #5845F8;
-    color: white;
-    padding: 14px 32px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
-
-.btn-cta:hover {
-    background-color: #4a3ac9;
-}
-
-.cta-image-wrapper {
-    margin-top: 40px;
-}
-
-.cta-image-wrapper img {
-    max-width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive Design for smaller screens */
-@media (max-width: 768px) {
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-    }
-    .section-title {
-        font-size: 28px;
-    }
-}
-/* General Setup */
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #F8F9FD; /* ছবির পেছনের হালকা রঙ */
-    margin: 0;
-}
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* CTA Section Styles */
-.cta-section {
-    padding: 100px 0;
-    text-align: center;
-}
-
-.section-title {
-    font-size: 42px;
-    font-weight: 800;
-    color: #050419;
-    margin: 0;
-}
-
-.subtitle {
-    font-size: 18px;
-    color: #555;
-    margin: 16px 0 32px 0;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.btn-cta { 
-    display: inline-block;
-    background-color: #5845F8; /* বেগুনি রঙ */
-    color: white;
-    padding: 14px 32px;
-    border-radius: 8px;    
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-
-.btn-cta:hover {
-    background-color: #4a3ac9; /* Hover করলে রঙ কিছুটা গাঢ় হবে */
-    transform: translateY(-2px);
-}
-
-
-.cta-image-wrapper {
-    margin-top: 50px;
-}
-
-
-
-.cta-image-wrapper img {
-    max-width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); /* ছবির নিচে হালকা ছায়া */
-}
-
-/* General Setup */
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #F8F9FD; /* ছবির পেছনের হালকা রঙ */
-    margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+}
+.baner h1{
+    margin-top: 100px;
+    font-size: 40px;
+    width: 500px;
+}
+.bn-btn{
+    display: flex;
+    justify-content: center;
+}
+.btn2{
+    padding: 10px 15px;
+    display: block;
+}
+/*------action section-----*/
+.act{
+    display: flex;
+    justify-content: center;
+}
+.action{
+    width: 600px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+.act-dis{
+    display: flex;
+    gap: 110px;
+}
+.ac-head p{
+    font-size: 14 px;
+    color:gray ;
+}
+.btn3{
+    padding: 10px 20px;
+}
+.ac-img{
+    height: 170px;
+    width: 180px;
+    border-radius: 20%;
+}
+/*----follower section----*/
+.flo{
+    display: flex;
+    justify-content: center;
+}
+.follower{
+    width: 600px;
+    background-color: #e5e7ff;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px 30px;
+    margin: 0px 50px;
+
+}
+.user-main{
+    display: flex;
+    justify-content: space-around;
+}
+.user h1{
+    color: #4E47FF;
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.user p{
+    font-size: 12px;
+    color: grey;
+}/*-----card section-----*/
+.cd-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.card-nain{
+    width: 600px;
+    margin: 0px 50px;
+}
+.card-main h1{
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 10px 5px;
+}
+.card-inner{
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.star1{
+    height: 10px;
+    margin-bottom: 0px;
+}
+.card h4{
+    font-size: 18px;
+    margin: 0px 5px;
+}
+.card p{
+    font-size: 10px;
+    margin: 5px;
+    color: grey;
+    padding: 0px 20px 0px 0px;
+}
+.card-img-set{
+    display: flex;
+}
+.com-dit h5{
+    margin: 5px;
+    padding: 0px;
+    color: rgb(43, 41, 41);
+    font-weight: 100;
+}
+.com-dit p{
+    margin: 5px;
+    padding: 0px;
+    color: grey;
+}
+.card-img1{
+    border-radius: 50%;
+    height: 30px;
+    margin-top: 5px;
+}
+.card:hover{
+    box-shadow: 8px 5px 2px rgb(238, 238, 238);
+    background-color: rgb(227, 239, 255);
+    transition: 0.5s;
+}
+/*-----focus section----*/
+.fc-main{
+    display: flex;
+    justify-content: center;
+}
+.focus{
+    background-color: white;
+    text-align: center;
+    padding: 30px 50px;
+    width: 600px;
+    margin: 20px 50px; 
+    border-radius: 20px;
+
+}
+.focus h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+.focus p{
+    font-size: 12px;
+    margin: 10px;
+    color: gray;
+}
+.focus-btn{
+    
+    text-align: center;
+    padding: 10px 24px;
+    margin-bottom: 20px;
+}
+.focus-img{
+    height: 220px;
+    width: 500px;
+    border-radius: 20px;
+}
+/*----form section---*/
+.frm-main{
+    display: flex;
+    justify-content: center;
+}
+.form-sec{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    padding: 50px 20px;
+}
+.form input{
+    margin: 5px;
+}
+.form-head h1{
+    font-size: 50px;
+}
+.in-item{
+    height: 35px;
+    border: none;
+    width: 250px;
+    margin: 0px;
+    border-radius: 5px;
+}
+.in-item2{
+    height: 80px;
+    border: none;
+    width: 255px;
+    border-radius: 5px;
+}
+.form-btn{
+    height: 35px;
+    width: 255px;
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+}
+textarea{
+    resize: none;
+}
+/*-------foooter section*/
+
+.foot-main{
+    display: flex;
+    justify-content: center;
 }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
+.footer{
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 15px;
+}
+.ft-main h1{
+    margin: 0px;
     padding: 20px;
 }
-
-/* Contact Section Styles */
-.contact-section {
-    width: 100%;
+.ft-main p{
+    margin: 10px auto;
+    font-size: 10px;
+    color: gray;
+    width: 300px;
 }
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 60px;
+.link a{
+    color: rgb(151, 146, 146);
+    font-size: 12px;
+    margin-left: 20px;
 }
-
-.contact-text h2 {
-    font-size: 72px;
-    font-weight: 800;
-    color: #050419;
-    line-height: 1.1;
-    margin: 0;
+.link a:hover{
+    color: orange;
+    transition: 0.5s;
 }
-
-.form-group {
-    margin-bottom: 24px;
-}
-
-.form-group label {
-    display: block;
-    font-weight: 500;
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 8px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 14px;
-    border: 1px solid #E0E0E0;
-    border-radius: 8px;
-    font-size: 16px;
-    font-family: 'Inter', sans-serif;
-    box-sizing: border-box; /* Important for padding and border */
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #5845F8;
-}
-
-.btn-submit {
-    width: 100%;
-    background-color: #5845F8; /* বেগুনি রঙ */
-    color: white;
-    padding: 16px;
-    border-radius: 8px;
-    border: none;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-submit:hover {
-    background-color: #4a3ac9;
-}
-
-/* Responsive Design for smaller screens */
-@media (max-width: 900px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
-    }
-
-    .contact-text h2 {
-        font-size: 50px;
-    }
-}
-/* General Setup */
-body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-}
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Footer Section Styles */
-.footer-section {
-    background-color: #F8F9FD; /* ছবির পেছনের হালকা রঙ */
-    padding: 80px 0;
-    text-align: center;
-}
-
-.footer-logo {
-    font-size: 42px;
-    font-weight: 800;
-    color: #5845F8; /* লোগোর বেগুনি রঙ */
-    margin-bottom: 24px;
-}
-
-.footer-text {
-    font-size: 16px;
-    color: #555; /* লেখার ধূসর রঙ */
-    line-height: 1.6;
-    max-width: 550px;
-    margin: 0 auto 32px auto; /* উপরে-নিচে এবং ডানে-বামে অটো মার্জিন */
-}
-
-.footer-nav a {
-    color: #333; /* লিংকের রঙ */
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0 15px; /* প্রতিটি লিংকের মাঝে ফাঁকা জায়গা */
-    transition: color 0.3s ease;
-}
-
-.footer-nav a:hover {
-    color: #5845F8; /* Hover করলে রঙ পরিবর্তন হবে */
-}
-
-
- 
-
-
-    
